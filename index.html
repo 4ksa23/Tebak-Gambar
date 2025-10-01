@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Gambar Hewan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Tebak Gambar/style.css">
+</head>
+
+<body>
+    <div class="container game-container text-center">
+        <h2 class="mb-3">Game Tebak Gambar Hewan</h2>
+        <p class="text-muted">Tebak jenis ras kucing / anjing dari gambar di bawah!</p>
+
+        <div class="card shadow-sm mb-3">
+            <img id="gambar" src="" alt="Hewan" class="animal-img mb-3">
+            <div class="input-group mb-3">
+                <input type="text" id="jawaban" class="form-control" placeholder="Tulis nama ras kucing / anjing...">
+                <div class="input-group-append">
+                    <button class="btn btn-success" onclick="cekJawaban()">
+                        Tebak
+                    </button>
+                </div>
+            </div>
+
+            <p id="pesan" class="font-weight-bold"></p>
+            <button class="btn btn-primary" onclick="nextSoal()">
+                Next Gambar
+            </button>
+        </div>
+
+        <div class="alert alert-info">
+            Skor: <span id="skor">0</span> | Kesempatan:
+            <span id="kesempatan">5</span>
+        </div>
+    </div>
+
+    <script src="/Tebak Gambar/script.js"></script>
+</body>
+
+</html>
